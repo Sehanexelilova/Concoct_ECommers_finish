@@ -1,0 +1,190 @@
+.container {
+    width: 75%;
+}
+
+.header_Search {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    align-items: center;
+
+}
+
+.searchInput {
+    border: none;
+    display: block;
+    width: 30%;
+    position: relative;
+}
+
+.container>h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 3vh 0;
+
+}
+
+.header_Search input {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 2.5vh 7vh;
+    border-radius: 34px;
+    border: 1px solid #BFBFBF;
+    position: relative;
+    outline: none;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+.header_Search input:focus {
+    border: 1px solid #BFBFBF;
+}
+
+
+.searchInput::after {
+    content: url('../../../assets/MenuPage/catagories/icons/Group\ 1.svg');
+    width: 20px;
+    height: 20px;
+    top: 34%;
+    left: 7%;
+    position: absolute;
+}
+
+
+.header_Search h3 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.boxs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-bottom: 5vh;
+}
+
+
+.box img {
+    width: 100%;
+}
+
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 0;
+    padding: 0;
+}
+
+.name h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.name span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header_Search h3 {
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .header_Search {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        gap: 2vh;
+    }
+
+    .searchInput {
+        width: 100%;
+    }
+
+    .searchInput input {
+        width: 100%;
+    }
+
+
+    .boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        height: max-content;
+    }
+}

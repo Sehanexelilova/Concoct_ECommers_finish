@@ -1,0 +1,151 @@
+.container {
+    width: 75%;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainText h4 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    width: 266px;
+    height: 42px;
+    padding: 0;
+    margin: 1vh 0;
+}
+
+.mainText h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+    width: 526px;
+    height: 144px;
+    padding: 0;
+    margin: 2vh 0;
+
+}
+
+.subText {
+    margin-top: 2vh;
+}
+
+.subText h4 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    width: 383px;
+    height: 84px;
+    padding: 0;
+    margin: 0;
+}
+
+.subText p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 383px;
+    height: 120px;
+    padding: 0;
+    margin: 4vh 0;
+}
+
+.text img {
+    width: 125px;
+    margin-bottom: 1vh;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        display: flex;
+        margin: 5vh auto;
+        flex-direction: column;
+    }
+
+
+    .container img {
+        width: 100%;
+        border-radius: 5vh;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .mainText h4 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .mainText {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+
+    .mainText h2 {
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 100% !important;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text img {
+        display: none;
+    }
+
+    .subText h4 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        height: max-content;
+    }
+
+.subText {
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+    
+    .subText p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+}

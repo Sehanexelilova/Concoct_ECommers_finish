@@ -1,0 +1,119 @@
+.container {
+    width: 80%;
+    margin: 15vh auto;
+
+}
+
+.bg_image {
+    background-image: url(../../../assets/MainPage/location/bgimage.png);
+    width: 1140px;
+    height: 362px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 10vh;
+    justify-content: space-between;
+}
+
+
+.bg_image img {
+    width: 508px;
+    height: 269px;
+}
+
+
+.text h3 {
+    width: 297px;
+    height: 72px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.text p {
+    width: 371px;
+    height: 72px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    margin: 5vh 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .bg_image img {
+        width: 287px;
+        height: 153px;
+    }
+
+    .bg_image {
+        padding: 5vh 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 516px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh ;
+
+    }
+
+
+    .text p {
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+        height: max-content;
+    }
+
+    .text h3 {
+        text-align: center;
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        height: max-content;
+        padding: 0;
+    }
+
+
+    .BTN{
+        width: 100%;
+        height: max-content;
+    }
+}

@@ -1,0 +1,183 @@
+.container {
+    height: max-content;
+    width: 80%;
+    margin: 7vh auto;
+}
+
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.text h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    margin-bottom: 3vh;
+    padding: 0;
+}
+
+
+.subText p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 435px;
+    height: 72px;
+
+}
+
+
+.subText {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.date {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.date div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.date * {
+    margin: 0;
+    padding: 0;
+    width: max-content !important;
+    height: 50% !important;
+}
+
+
+.date div p {
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container>div:first-child p {
+    display: none;
+}
+
+.date div h2 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .subText>p {
+        display: none !important;
+    }
+
+
+
+    .container>div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .container>div:first-child p {
+        display: block;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+
+    .text h2 {
+        width: 100%;
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .text>div {
+        width: 100%;
+        margin: 2vh;
+    }
+
+    .container>div:first-child img {
+        width: 100%;
+
+    }
+
+
+    .subText {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .date div p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .date div span {
+
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

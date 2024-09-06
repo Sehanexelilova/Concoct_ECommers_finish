@@ -1,0 +1,106 @@
+.exploreBTN {
+    display: flex;
+    justify-content: center;
+}
+
+.exploreBTN button {
+    border: none;
+    background-color: #000;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 0.9vw;
+    line-height: 1.45vw;
+    border-radius: 999px;
+    width: 12.5vw;
+    height: 4.2vw;
+    padding: 0.5vw 1.8vw 0.5vw 0.5vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.exploreBTN button:before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 2.7vw;
+    border-radius: 2vw;
+    right: 0.6vw;
+    top: 0.7vw;
+    background-color: #FFA800;
+    transition: width 0.3s;
+}
+
+.exploreBTN button::after {
+    content: url('../../assets/MainPage/Banner/icon/Frame\ 4430px.svg');
+    position: absolute;
+    width: 48px;
+    height: 3.3vw;
+    right: 0.6vw;
+    top: 1.4vw;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.exploreBTN button:hover:before {
+    color: black;
+    width: 12.5vw;
+    height: 4.2vw;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.2vw;
+    font-weight: 500;
+    font-family: Poppins;
+    content: 'Lets Explore';
+}
+
+.exploreBTN button:hover::after {
+    animation: iconFade 0.5s ease forwards;
+}
+
+@keyframes iconFade {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateX(0.9vw);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateX(-1.5vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .exploreBTN button {
+        width: 40%;
+        height: 5vh;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+
+    .exploreBTN button:before {
+        display: none;
+    }
+
+}
