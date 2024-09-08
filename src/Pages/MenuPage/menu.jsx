@@ -4,9 +4,7 @@ import Categories from './categories/categories'
 
 function Menu() {
     return (
-        <>
-        <Categories/>
-        </>
+        <Categories />
     )
 }
 
